@@ -1,0 +1,398 @@
+{
+  "RandomForest": {
+    "binary": {
+      "accuracy": 0.996,
+      "precision": 0.9971,
+      "recall": 0.9979,
+      "f1": 0.9975,
+      "roc_auc": 0.9999,
+      "false_positive_rate": 0.0114
+    },
+    "multiclass": {
+      "accuracy": 0.9945,
+      "macro_f1": 0.9934,
+      "report": {
+        "BENIGN": {
+          "precision": 0.9918032786885246,
+          "recall": 0.988562091503268,
+          "f1-score": 0.9901800327332242,
+          "support": 1224.0
+        },
+        "DoS": {
+          "precision": 1.0,
+          "recall": 0.9930139720558883,
+          "f1-score": 0.9964947421131698,
+          "support": 1002.0
+        },
+        "DDoS": {
+          "precision": 0.999001996007984,
+          "recall": 0.9970119521912351,
+          "f1-score": 0.9980059820538385,
+          "support": 1004.0
+        },
+        "PortScan": {
+          "precision": 0.9980059820538385,
+          "recall": 0.9970119521912351,
+          "f1-score": 0.9975087194818136,
+          "support": 1004.0
+        },
+        "BruteForce": {
+          "precision": 0.9989572471324296,
+          "recall": 0.9968782518210197,
+          "f1-score": 0.9979166666666667,
+          "support": 961.0
+        },
+        "WebAttack": {
+          "precision": 0.9771689497716894,
+          "recall": 0.9976689976689976,
+          "f1-score": 0.9873125720876585,
+          "support": 429.0
+        },
+        "Bot": {
+          "precision": 0.9773869346733668,
+          "recall": 0.9948849104859335,
+          "f1-score": 0.9860583016476553,
+          "support": 391.0
+        },
+        "accuracy": 0.9945137157107232,
+        "macro avg": {
+          "precision": 0.9917606269039762,
+          "recall": 0.9950045897025109,
+          "f1-score": 0.9933538595405752,
+          "support": 6015.0
+        },
+        "weighted avg": {
+          "precision": 0.9945677320851919,
+          "recall": 0.9945137157107232,
+          "f1-score": 0.9945251301814071,
+          "support": 6015.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1210,
+          0,
+          0,
+          2,
+          1,
+          2,
+          9
+        ],
+        [
+          3,
+          995,
+          1,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          1001,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1001,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          958,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          428,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          389
+        ]
+      ]
+    },
+    "top_features": [
+      {
+        "feature": "Destination Port",
+        "importance": 0.08917
+      },
+      {
+        "feature": "Init_Win_bytes_backward",
+        "importance": 0.0521
+      },
+      {
+        "feature": "min_seg_size_forward",
+        "importance": 0.04265
+      },
+      {
+        "feature": "Packet Length Mean",
+        "importance": 0.03826
+      },
+      {
+        "feature": "Average Packet Size",
+        "importance": 0.03686
+      },
+      {
+        "feature": "Avg Bwd Segment Size",
+        "importance": 0.03333
+      },
+      {
+        "feature": "Bwd Packets/s",
+        "importance": 0.03307
+      },
+      {
+        "feature": "Subflow Fwd Bytes",
+        "importance": 0.02843
+      },
+      {
+        "feature": "Avg Fwd Segment Size",
+        "importance": 0.02779
+      },
+      {
+        "feature": "Fwd Packet Length Mean",
+        "importance": 0.02746
+      },
+      {
+        "feature": "Bwd Packet Length Mean",
+        "importance": 0.0271
+      },
+      {
+        "feature": "Total Length of Fwd Packets",
+        "importance": 0.02669
+      },
+      {
+        "feature": "Fwd Packet Length Max",
+        "importance": 0.0245
+      },
+      {
+        "feature": "Packet Length Std",
+        "importance": 0.02016
+      },
+      {
+        "feature": "Flow IAT Mean",
+        "importance": 0.02006
+      }
+    ]
+  },
+  "XGBoost": {
+    "binary": {
+      "accuracy": 0.998,
+      "precision": 0.999,
+      "recall": 0.9985,
+      "f1": 0.9987,
+      "roc_auc": 1.0,
+      "false_positive_rate": 0.0041
+    },
+    "multiclass": {
+      "accuracy": 0.9968,
+      "macro_f1": 0.9964,
+      "report": {
+        "BENIGN": {
+          "precision": 0.9942903752039152,
+          "recall": 0.9959150326797386,
+          "f1-score": 0.9951020408163266,
+          "support": 1224.0
+        },
+        "DoS": {
+          "precision": 1.0,
+          "recall": 0.9930139720558883,
+          "f1-score": 0.9964947421131698,
+          "support": 1002.0
+        },
+        "DDoS": {
+          "precision": 0.9990029910269193,
+          "recall": 0.99800796812749,
+          "f1-score": 0.9985052316890882,
+          "support": 1004.0
+        },
+        "PortScan": {
+          "precision": 0.999001996007984,
+          "recall": 0.9970119521912351,
+          "f1-score": 0.9980059820538385,
+          "support": 1004.0
+        },
+        "BruteForce": {
+          "precision": 1.0,
+          "recall": 0.9989594172736732,
+          "f1-score": 0.9994794377928162,
+          "support": 961.0
+        },
+        "WebAttack": {
+          "precision": 0.9794520547945206,
+          "recall": 1.0,
+          "f1-score": 0.9896193771626297,
+          "support": 429.0
+        },
+        "Bot": {
+          "precision": 0.9974424552429667,
+          "recall": 0.9974424552429667,
+          "f1-score": 0.9974424552429667,
+          "support": 391.0
+        },
+        "accuracy": 0.9968412302576891,
+        "macro avg": {
+          "precision": 0.9955985531823294,
+          "recall": 0.9971929710815702,
+          "f1-score": 0.9963784666958336,
+          "support": 6015.0
+        },
+        "weighted avg": {
+          "precision": 0.9968733761827904,
+          "recall": 0.9968412302576891,
+          "f1-score": 0.9968472719328584,
+          "support": 6015.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1219,
+          0,
+          1,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          4,
+          995,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          2,
+          0,
+          1002,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1001,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          960,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          429,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          390
+        ]
+      ]
+    },
+    "top_features": [
+      {
+        "feature": "Bwd Packets/s",
+        "importance": 0.05679
+      },
+      {
+        "feature": "SYN Flag Count",
+        "importance": 0.05358
+      },
+      {
+        "feature": "Bwd Packet Length Std",
+        "importance": 0.05073
+      },
+      {
+        "feature": "Max Packet Length",
+        "importance": 0.04942
+      },
+      {
+        "feature": "Subflow Bwd Packets",
+        "importance": 0.04217
+      },
+      {
+        "feature": "Fwd PSH Flags",
+        "importance": 0.04206
+      },
+      {
+        "feature": "Total Backward Packets",
+        "importance": 0.04045
+      },
+      {
+        "feature": "Bwd IAT Mean",
+        "importance": 0.03892
+      },
+      {
+        "feature": "PSH Flag Count",
+        "importance": 0.03517
+      },
+      {
+        "feature": "Bwd IAT Max",
+        "importance": 0.03514
+      },
+      {
+        "feature": "Fwd Header Length",
+        "importance": 0.03315
+      },
+      {
+        "feature": "min_seg_size_forward",
+        "importance": 0.0318
+      },
+      {
+        "feature": "act_data_pkt_fwd",
+        "importance": 0.03143
+      },
+      {
+        "feature": "Bwd Packet Length Mean",
+        "importance": 0.0313
+      },
+      {
+        "feature": "Destination Port",
+        "importance": 0.0268
+      }
+    ]
+  }
+}

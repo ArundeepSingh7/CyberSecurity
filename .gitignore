@@ -1,0 +1,28 @@
+# Virtual environment (CRITICAL: prevents pushing 100MB+ DLLs that GitHub blocks)
+venv/
+.venv/
+env/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases & logs
+*.db
+*.sqlite3
+*.log
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

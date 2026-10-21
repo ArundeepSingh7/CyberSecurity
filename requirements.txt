@@ -1,0 +1,21 @@
+pandas
+numpy
+scikit-learn
+xgboost
+shap
+joblib
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+requests
+streamlit
+plotly
+pytest
+httpx
+flask
+scapy
+streamlit-autorefresh
+optuna
+# Note: on Windows, scapy requires Npcap (https://npcap.com) and
+#       the capture thread must run with Administrator privileges.
